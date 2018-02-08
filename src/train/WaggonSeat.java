@@ -37,6 +37,6 @@ public class WaggonSeat {
 
     @Override
     public String toString() {
-        return "train.WaggonSeat { seatId = " + seatId + ", location = " + location.toString();
+        return "WaggonSeat { seatId = " + seatId + ", location = " + location.toString();
     }
 }

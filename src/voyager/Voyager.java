@@ -44,6 +44,6 @@ public class Voyager {
 
     @Override
     public String toString() {
-        return "voyager.Voyager { name = " + name + ", fingerprint = " + fingerprint + ", phone = " + phone + " }";
+        return "Voyager { name = " + name + ", fingerprint = " + fingerprint + ", phone = " + phone + " }";
     }
 }

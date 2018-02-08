@@ -35,6 +35,6 @@ public class MPhone {
 
     @Override
     public String toString() {
-        return "voyager.MPhone { chip = " + chip + ", ticketId = " + ticketId + " }";
+        return "MPhone { chip = " + chip + ", ticketId = " + ticketId + " }";
     }
 }

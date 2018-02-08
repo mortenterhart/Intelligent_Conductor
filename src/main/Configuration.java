@@ -7,5 +7,5 @@ public enum Configuration {
     public String fileSeparator = System.getProperty("file.separator");
     public String lineSeparator = System.lineSeparator();
 
-    public String logFile = userDirectory + fileSeparator + "log" + fileSeparator + "main.Application.log";
+    public String logFile = userDirectory + fileSeparator + "log" + fileSeparator + "Application.log";
 }

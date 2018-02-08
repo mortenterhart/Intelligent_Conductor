@@ -28,7 +28,7 @@ public class IntelligentConductor {
     }
 
     public void checkTickets() {
-        System.out.println("--- train.IntelligentConductor.checkTickets()");
+        System.out.println("--- IntelligentConductor.checkTickets()");
         for (IRFIDChip chip : phoneChips) {
             if (chip.hasValidTicket()) {
                 System.out.println("Chip " + chip.toString() + " has a valid ticket!");
@@ -39,7 +39,7 @@ public class IntelligentConductor {
     }
 
     public void printTickets() {
-        System.out.println("-- train.IntelligentConductor.printTickets()");
+        System.out.println("-- IntelligentConductor.printTickets()");
         System.out.println("Available tickets in repository!");
         for (ElectronicTicket ticket : TicketRepository.instance.repository.values()) {
             System.out.println(ticket);
