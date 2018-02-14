@@ -6,7 +6,7 @@ import voyager.Voyager;
 
 import java.util.Date;
 
-public class ElectronicTicket {
+class ElectronicTicket {
     private int ticketId = 0;
     private Voyager voyager;
     private Date travelTime;
@@ -16,7 +16,7 @@ public class ElectronicTicket {
     private Destination destinationLocation;
 
     private ElectronicTicket(TicketBuilder builder) {
-        ticketId            = builder.ticketId;
+        ticketId            = TicketBuilder.ticketId;
         voyager             = builder.voyager;
         travelTime          = builder.travelTime;
         travelCategory      = builder.travelCategory;
@@ -63,18 +63,19 @@ public class ElectronicTicket {
     }
 
     public static class TicketBuilder implements IBuilder<ElectronicTicket> {
-        private int ticketId = 0;
+        /**
+         * <code>ticketId</code> is a static number inside the ticket builder which is
+         * incremented automatically when a ticked is constructed. It takes care about
+         * giving an unique id to each of the tickets.
+         */
+        private static int ticketId = 0;
+
         private Voyager voyager;
         private Date travelTime;
         private TravelClass travelCategory;
         private WaggonSeat seat;
         private Source sourceLocation;
         private Destination destinationLocation;
-
-        public TicketBuilder setTicketId(int id) {
-            ticketId = id;
-            return this;
-        }
 
         public TicketBuilder setVoyager(Voyager voyager) {
             this.voyager = voyager;
@@ -109,6 +110,7 @@ public class ElectronicTicket {
         public ElectronicTicket build() {
             ElectronicTicket ticket = new ElectronicTicket(this);
             TicketRepository.instance.registerTicket(ticket);
+            ticketId++;
             ticket.sendToPhone();
             return ticket;
         }
@@ -125,6 +127,7 @@ public class ElectronicTicket {
         builder.append("seat = ").append(seat).append(", ");
         builder.append("sourceLocation = ").append(sourceLocation.name()).append(", ");
         builder.append("destinationLocation = ").append(destinationLocation.name()).append(" }");
+        builder.trimToSize();
         return builder.toString();
     }
 }

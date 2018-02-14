@@ -14,11 +14,6 @@ public class WaggonSeat {
         location = seatLocation;
     }
 
-    public WaggonSeat(int id, SeatLocation seatLocation) {
-        seatId = id;
-        location = seatLocation;
-    }
-
     public int getSeatId() {
         return seatId;
     }

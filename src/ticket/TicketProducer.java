@@ -46,7 +46,7 @@ public class TicketProducer {
     private static void buildTicket(int ticketId, Voyager voyager, Date travelTime, TravelClass category,
                                     WaggonSeat seat, Source srcLocation, Destination destLocation) {
         builder.setTicketId(ticketId)
-                .setVoyager(voyager)
+                //.setVoyager(voyager)
                 .setTravelTime(travelTime)
                 .setTravelCategory(category)
                 .setSeat(seat)

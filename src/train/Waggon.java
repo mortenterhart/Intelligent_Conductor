@@ -14,11 +14,11 @@ public class Waggon {
         // Initialize all seats on the left side with a unique id
         seats = new ArrayList<>(numberOfSeats);
         IntStream.range(0, numberOfSeats / 2).forEachOrdered(leftId ->
-                seats.add(new WaggonSeat(leftId, SeatLocation.left)));
+                seats.add(new WaggonSeat(SeatLocation.left)));
 
         // Initialize all seats on the right side with a unique id
         IntStream.range(numberOfSeats / 2, numberOfSeats).forEachOrdered(rightId ->
-                seats.add(new WaggonSeat(rightId, SeatLocation.right)));
+                seats.add(new WaggonSeat(SeatLocation.right)));
 
         // Instantiate the aisle
         aisle = new Aisle(0.7);

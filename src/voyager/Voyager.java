@@ -1,6 +1,9 @@
 package voyager;
 
+import ticket.ElectronicTicket;
+
 public class Voyager {
+    private ElectronicTicket ticket;
     private String name;
     private String fingerprint;
     private MPhone phone;
@@ -19,6 +22,14 @@ public class Voyager {
         name = voyager.name;
         fingerprint = voyager.fingerprint;
         phone = voyager.phone;
+    }
+
+    public ElectronicTicket getTicket() {
+        return ticket;
+    }
+
+    public void buyTicket() {
+        
     }
 
     public String getName() {
