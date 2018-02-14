@@ -6,7 +6,7 @@ import voyager.Voyager;
 
 import java.util.Date;
 
-class ElectronicTicket {
+public class ElectronicTicket {
     private int ticketId = 0;
     private Voyager voyager;
     private Date travelTime;
@@ -110,8 +110,8 @@ class ElectronicTicket {
         public ElectronicTicket build() {
             ElectronicTicket ticket = new ElectronicTicket(this);
             TicketRepository.instance.registerTicket(ticket);
-            ticketId++;
             ticket.sendToPhone();
+            ticketId++;
             return ticket;
         }
     }

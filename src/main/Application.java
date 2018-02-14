@@ -9,7 +9,6 @@ import train.Train;
 public class Application {
     private Train train;
     private IntelligentConductor conductor;
-    private ElectronicTicket.TicketBuilder builder = new ElectronicTicket.TicketBuilder();
 
     public Application() {
         constructTrain();

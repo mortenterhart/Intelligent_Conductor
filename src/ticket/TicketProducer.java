@@ -38,15 +38,14 @@ public class TicketProducer {
             Source source = randomEnumConstant(Source.class);
             Destination destination = randomEnumConstant(Destination.class);
 
-            buildTicket(seat.getSeatId(), copiedVoyager, new Date(), category,
+            buildTicket(copiedVoyager, new Date(), category,
                     seat, source, destination);
         }
     }
 
-    private static void buildTicket(int ticketId, Voyager voyager, Date travelTime, TravelClass category,
+    private static void buildTicket(Voyager voyager, Date travelTime, TravelClass category,
                                     WaggonSeat seat, Source srcLocation, Destination destLocation) {
-        builder.setTicketId(ticketId)
-                //.setVoyager(voyager)
+        builder.setVoyager(voyager)
                 .setTravelTime(travelTime)
                 .setTravelCategory(category)
                 .setSeat(seat)
