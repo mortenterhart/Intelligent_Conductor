@@ -21,6 +21,6 @@ public class EUChip implements IRFIDChip {
 
     @Override
     public String toString() {
-        return "chip.EUChip { ticketId = " + ticketId + " }";
+        return "EUChip { ticketId = " + ticketId + " }";
     }
 }

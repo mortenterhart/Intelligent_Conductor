@@ -1,5 +1,7 @@
 package ticket;
 
+import voyager.Voyager;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,7 +9,7 @@ public enum TicketRepository {
     instance;
 
     private int numberOfTickets = 50;
-    public Map<Integer, ElectronicTicket> repository = new HashMap<>(numberOfTickets);
+    public final Map<Integer, ElectronicTicket> repository = new HashMap<>(numberOfTickets);
 
     /**
      * Registers a new ticket in the ticket repository only if that ticket
@@ -48,5 +50,24 @@ public enum TicketRepository {
      */
     public ElectronicTicket getTicket(int ticketId) {
         return repository.get(ticketId);
+    }
+
+    /**
+     * Requests the delivery of the ticket for a special voyager and checks if the voyager
+     * has bought a ticket
+     * @param voyager the voyager to look for
+     * @return the ticket if the voyager has a ticket in the repository, null otherwise.
+     */
+    public ElectronicTicket getTicket(Voyager voyager) {
+        for (ElectronicTicket ticket : repository.values()) {
+            if (ticket.getVoyager() == voyager) {
+                return ticket;
+            }
+        }
+        return null;
+    }
+
+    public boolean hasTicketBought(Voyager voyager) {
+        return getTicket(voyager) != null;
     }
 }

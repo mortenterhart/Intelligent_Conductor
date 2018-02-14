@@ -1,10 +1,15 @@
 package train;
 
 public class Train {
+    private static Train instance = new Train();
     private Waggon waggon;
 
-    public Train() {
+    private Train() {
         waggon = new Waggon();
+    }
+
+    public static Train getInstance() {
+        return instance;
     }
 
     public Waggon getWaggon() {

@@ -2,43 +2,40 @@ package train;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 public class Waggon {
-    private List<WaggonSeat> leftSeats;
-    private List<WaggonSeat> rightSeats;
-    private int numberOfSeats = 25;
+    private List<WaggonSeat> seats;
+    private int numberOfSeats = 50;
     private Aisle aisle;
 
     public Waggon() {
         // Initialize all seats on the left side with a unique id
-        leftSeats = new ArrayList<>(25);
-        IntStream.range(0, numberOfSeats).forEachOrdered(leftId ->
-                leftSeats.add(new WaggonSeat(leftId, SeatLocation.left)));
+        seats = new ArrayList<>(numberOfSeats);
+        IntStream.range(0, numberOfSeats / 2).forEachOrdered(leftId ->
+                seats.add(new WaggonSeat(leftId, SeatLocation.left)));
 
         // Initialize all seats on the right side with a unique id
-        rightSeats = new ArrayList<>(25);
-        IntStream.range(numberOfSeats, getTotalNumberOfSeats()).forEachOrdered(rightId ->
-                rightSeats.add(new WaggonSeat(rightId, SeatLocation.right)));
+        IntStream.range(numberOfSeats / 2, numberOfSeats).forEachOrdered(rightId ->
+                seats.add(new WaggonSeat(rightId, SeatLocation.right)));
 
         // Instantiate the aisle
-        aisle = new Aisle();
+        aisle = new Aisle(0.7);
     }
 
     public List<WaggonSeat> getLeftSeats() {
-        return leftSeats;
+        return seats.stream().filter(seat -> seat.getLocation() == SeatLocation.left)
+                .collect(Collectors.toList());
     }
 
     public List<WaggonSeat> getRightSeats() {
-        return rightSeats;
-    }
-
-    public int getNumberOfSeatsOnOneSide() {
-        return numberOfSeats;
+        return seats.stream().filter(seat -> seat.getLocation() == SeatLocation.right)
+                .collect(Collectors.toList());
     }
 
     public int getTotalNumberOfSeats() {
-        return numberOfSeats * 2;
+        return numberOfSeats;
     }
 
     public Aisle getAisle() {

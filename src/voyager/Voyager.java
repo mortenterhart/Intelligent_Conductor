@@ -1,7 +1,5 @@
 package voyager;
 
-import voyager.MPhone;
-
 public class Voyager {
     private String name;
     private String fingerprint;
@@ -15,6 +13,12 @@ public class Voyager {
     public Voyager(String name) {
         this();
         this.name = name;
+    }
+
+    public Voyager(Voyager voyager) {
+        name = voyager.name;
+        fingerprint = voyager.fingerprint;
+        phone = voyager.phone;
     }
 
     public String getName() {
@@ -44,6 +48,6 @@ public class Voyager {
 
     @Override
     public String toString() {
-        return "Voyager { name = " + name + ", fingerprint = " + fingerprint + ", phone = " + phone + " }";
+        return "Voyager { name = " + name + ", fingerprint = \"" + fingerprint + "\", phone = " + phone + " }";
     }
 }

@@ -5,10 +5,8 @@ import chip.IRFIDChip;
 
 public class MPhone {
     private IRFIDChip chip;
-    private int ticketId = 0;
 
     public MPhone() {
-        ticketId = 0;
         chip = new EUChip();
     }
 
@@ -17,7 +15,6 @@ public class MPhone {
     }
 
     public void receiveTicketId(int id) {
-        ticketId = id;
         chip.setTicketId(id);
     }
 
@@ -29,12 +26,9 @@ public class MPhone {
         return chip;
     }
 
-    public int getTicketId() {
-        return ticketId;
-    }
 
     @Override
     public String toString() {
-        return "MPhone { chip = " + chip + ", ticketId = " + ticketId + " }";
+        return "MPhone { chip = " + chip + " }";
     }
 }

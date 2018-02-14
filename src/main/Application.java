@@ -1,68 +1,32 @@
 package main;
 
 import logging.Logger;
-import voyager.MPhone;
-import ticket.Destination;
 import ticket.ElectronicTicket;
-import ticket.Source;
-import ticket.TicketRepository;
+import ticket.TicketProducer;
 import train.IntelligentConductor;
 import train.Train;
-import train.TravelClass;
-import train.WaggonSeat;
-import voyager.Voyager;
-
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class Application {
     private Train train;
     private IntelligentConductor conductor;
-    private List<WaggonSeat> seats;
-    private int ticketIdCounter = 0;
+    private ElectronicTicket.TicketBuilder builder = new ElectronicTicket.TicketBuilder();
 
     public Application() {
         constructTrain();
         constructConductor();
     }
 
-    public void produceTickets() {
-        ElectronicTicket.TicketBuilder builder = new ElectronicTicket.TicketBuilder();
-        while (ticketIdCounter < seats.size()) {
-            Voyager voyager = new Voyager("Any Name");
-            voyager.setPhone(new MPhone());
-            voyager.setFingerprint("fingerprint");
-
-            builder.setTicketId(ticketIdCounter)
-                    .setVoyager(voyager)
-                    .setTravelTime(new Date())
-                    .setTravelCategory(TravelClass.FIRST)
-                    .setSeat(seats.get(ticketIdCounter))
-                    .setSourceLocation(Source.Cologne)
-                    .setDestinationLocation(Destination.Heidelberg)
-                    .build();
-
-            ticketIdCounter++;
-        }
-        Logger.instance.write(TicketRepository.instance.repository.values().toString());
+    private void constructTrain() {
+        train = Train.getInstance();
     }
 
-    public void constructTrain() {
-        train = new Train();
-        seats = Stream.of(train.getWaggon().getLeftSeats(), train.getWaggon().getRightSeats()).
-                flatMap(Collection::stream).collect(Collectors.toList());
-    }
-
-    public void constructConductor() {
+    private void constructConductor() {
         conductor = new IntelligentConductor();
     }
 
-    public void execute() {
+    private void execute() {
         Logger.instance.init();
-        produceTickets();
+        TicketProducer.produceTickets();
         conductor.init();
         conductor.checkTickets();
         conductor.printTickets();

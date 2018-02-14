@@ -1,5 +1,7 @@
 package main;
 
+import random.MersenneTwisterFast;
+
 public enum Configuration {
     instance;
 
@@ -8,4 +10,6 @@ public enum Configuration {
     public String lineSeparator = System.lineSeparator();
 
     public String logFile = userDirectory + fileSeparator + "log" + fileSeparator + "Application.log";
+
+    public MersenneTwisterFast mersenneTwister = new MersenneTwisterFast();
 }

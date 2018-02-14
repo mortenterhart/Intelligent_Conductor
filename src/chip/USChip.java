@@ -19,6 +19,6 @@ public class USChip {
 
     @Override
     public String toString() {
-        return "chip.USChip { ticketId = " + ticketId + " }";
+        return "USChip { ticketId = " + ticketId + " }";
     }
 }

@@ -1,7 +1,6 @@
 package train;
 
 import chip.IRFIDChip;
-import chip.USChipAdapter;
 import ticket.ElectronicTicket;
 import ticket.TicketRepository;
 
@@ -19,12 +18,6 @@ public class IntelligentConductor {
         for (ElectronicTicket ticket : TicketRepository.instance.repository.values()) {
             phoneChips.add(ticket.getVoyager().getPhone().getChip());
         }
-
-        for (int i = 0; i < 100; i++) {
-            IRFIDChip chip = new USChipAdapter();
-            chip.setTicketId(i);
-            phoneChips.add(chip);
-        }
     }
 
     public void checkTickets() {
@@ -40,7 +33,7 @@ public class IntelligentConductor {
 
     public void printTickets() {
         System.out.println("-- IntelligentConductor.printTickets()");
-        System.out.println("Available tickets in repository!");
+        System.out.println("Available tickets in repository:");
         for (ElectronicTicket ticket : TicketRepository.instance.repository.values()) {
             System.out.println(ticket);
         }

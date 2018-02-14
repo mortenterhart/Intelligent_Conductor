@@ -106,7 +106,6 @@ public class ElectronicTicket {
             return this;
         }
 
-        @Override
         public ElectronicTicket build() {
             ElectronicTicket ticket = new ElectronicTicket(this);
             TicketRepository.instance.registerTicket(ticket);
