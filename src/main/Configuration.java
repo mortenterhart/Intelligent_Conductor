@@ -9,7 +9,7 @@ public enum Configuration {
     public String fileSeparator = System.getProperty("file.separator");
     public String lineSeparator = System.lineSeparator();
 
-    public String logFile = userDirectory + fileSeparator + "log" + fileSeparator + "Application.log";
+    public String logFile = userDirectory + fileSeparator + "log" + fileSeparator + "IntelligentConductor.log";
 
     public MersenneTwisterFast mersenneTwister = new MersenneTwisterFast();
 }

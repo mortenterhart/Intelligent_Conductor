@@ -10,7 +10,6 @@ import voyager.MPhone;
 import voyager.Voyager;
 
 import java.util.Date;
-import java.util.List;
 
 public class TicketProducer {
     private static ElectronicTicket.TicketBuilder builder = new ElectronicTicket.TicketBuilder();
@@ -20,26 +19,22 @@ public class TicketProducer {
     }
 
     public static void produceTickets() {
-        Voyager leftVoyager = new Voyager("Dr. Left");
-        leftVoyager.setFingerprint("Thumbs up \uD83D\uDC4D");
-        leftVoyager.setPhone(new MPhone(new EUChip()));
-        buildTicketsForEachSeat(train.getWaggon().getLeftSeats(), leftVoyager, TravelClass.FIRST);
+        for (WaggonSeat leftSeat : train.getWaggon().getLeftSeats()) {
+            Voyager leftVoyager = new Voyager("Dr. Left");
+            leftVoyager.setFingerprint("Thumbs up \uD83D\uDC4D");
+            leftVoyager.setPhone(new MPhone(new EUChip()));
 
-        Voyager rightVoyager = new Voyager("Dr. Right");
-        rightVoyager.setFingerprint("Thumbs down \uD83D\uDC4E");
-        rightVoyager.setPhone(new MPhone(new USChipAdapter()));
-        buildTicketsForEachSeat(train.getWaggon().getRightSeats(), rightVoyager, TravelClass.SECOND);
-    }
+            buildTicket(leftVoyager, new Date(), TravelClass.FIRST, leftSeat,
+                    randomEnumConstant(Source.class), randomEnumConstant(Destination.class));
+        }
 
-    private static void buildTicketsForEachSeat(List<WaggonSeat> availableSeats, Voyager sampleVoyager, TravelClass category) {
-        for (WaggonSeat seat : availableSeats) {
-            Voyager copiedVoyager = new Voyager(sampleVoyager);
+        for (WaggonSeat rightSeat : train.getWaggon().getRightSeats()) {
+            Voyager rightVoyager = new Voyager("Dr. Right");
+            rightVoyager.setFingerprint("Thumbs down \uD83D\uDC4E");
+            rightVoyager.setPhone(new MPhone(new USChipAdapter()));
 
-            Source source = randomEnumConstant(Source.class);
-            Destination destination = randomEnumConstant(Destination.class);
-
-            buildTicket(copiedVoyager, new Date(), category,
-                    seat, source, destination);
+            buildTicket(rightVoyager, new Date(), TravelClass.SECOND, rightSeat,
+                    randomEnumConstant(Source.class), randomEnumConstant(Destination.class));
         }
     }
 

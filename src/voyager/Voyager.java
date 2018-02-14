@@ -1,5 +1,10 @@
 package voyager;
 
+import chip.EUChip;
+import chip.IRFIDChip;
+import chip.USChip;
+import chip.USChipAdapter;
+
 public class Voyager {
     private String name;
     private String fingerprint;
@@ -13,12 +18,6 @@ public class Voyager {
     public Voyager(String name) {
         this();
         this.name = name;
-    }
-
-    public Voyager(Voyager voyager) {
-        name = voyager.name;
-        fingerprint = voyager.fingerprint;
-        phone = voyager.phone;
     }
 
     public void buyTicket() {

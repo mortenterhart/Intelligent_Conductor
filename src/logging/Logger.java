@@ -28,5 +28,10 @@ public enum Logger {
         Date currentDate = new Date();
         writer.write(dateFormat.format(currentDate) + ": " + message +
                 Configuration.instance.lineSeparator);
+        writer.flush();
+    }
+
+    public void close() {
+        writer.close();
     }
 }

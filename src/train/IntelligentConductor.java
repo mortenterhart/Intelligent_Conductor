@@ -8,9 +8,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class IntelligentConductor {
+    private ScanningDevice scanner;
     private List<IRFIDChip> phoneChips;
 
     public IntelligentConductor() {
+        scanner = new ScanningDevice();
         phoneChips = new ArrayList<>();
     }
 

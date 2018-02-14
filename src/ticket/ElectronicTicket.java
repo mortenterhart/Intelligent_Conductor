@@ -34,6 +34,10 @@ public class ElectronicTicket {
         voyager.getPhone().receiveTicketId(ticketId);
     }
 
+    private void reserveSeat() {
+        seat.setSeatId(ticketId);
+    }
+
     public int getTicketId() {
         return ticketId;
     }
@@ -111,6 +115,7 @@ public class ElectronicTicket {
             ElectronicTicket ticket = new ElectronicTicket(this);
             TicketRepository.instance.registerTicket(ticket);
             ticket.sendToPhone();
+            ticket.reserveSeat();
             ticketId++;
             return ticket;
         }

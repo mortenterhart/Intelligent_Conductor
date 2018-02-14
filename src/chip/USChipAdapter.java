@@ -11,7 +11,7 @@ public class USChipAdapter extends USChip implements IRFIDChip {
     }
 
     public void setTicketId(int id) {
-        super.setTicketId(id);
+        super.setTicketIdUS(id);
     }
 
     @Override

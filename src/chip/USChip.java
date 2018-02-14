@@ -13,7 +13,7 @@ public class USChip {
         return ticketId;
     }
 
-    public void setTicketId(int id) {
+    public void setTicketIdUS(int id) {
         ticketId = id;
     }
 
