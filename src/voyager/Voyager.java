@@ -1,18 +1,15 @@
 package voyager;
 
-import chip.EUChip;
-import chip.IRFIDChip;
-import chip.USChip;
-import chip.USChipAdapter;
+import ticket.TicketRepository;
 
 public class Voyager {
     private String name;
-    private String fingerprint;
+    private String fingerPrint;
     private MPhone phone;
 
     public Voyager() {
         name = new String();
-        fingerprint = new String();
+        fingerPrint = new String();
     }
 
     public Voyager(String name) {
@@ -20,8 +17,10 @@ public class Voyager {
         this.name = name;
     }
 
-    public void buyTicket() {
-
+    public Voyager(String name, String fingerPrint, MPhone phone) {
+        this.name = name;
+        this.fingerPrint = fingerPrint;
+        this.phone = phone;
     }
 
     public String getName() {
@@ -32,16 +31,24 @@ public class Voyager {
         this.name = name;
     }
 
-    public String getFingerprint() {
-        return fingerprint;
+    public String getFingerPrint() {
+        return fingerPrint;
     }
 
-    public void setFingerprint(String fingerprint) {
-        this.fingerprint = fingerprint;
+    public void setFingerPrint(String fingerPrint) {
+        this.fingerPrint = fingerPrint;
     }
 
     public MPhone getPhone() {
         return phone;
+    }
+
+    public boolean hasPhone() {
+        return phone != null;
+    }
+
+    public boolean hasTicketBought() {
+        return TicketRepository.instance.hasTicketBought(this);
     }
 
     public void setPhone(MPhone phone) {
@@ -51,6 +58,6 @@ public class Voyager {
 
     @Override
     public String toString() {
-        return "Voyager { name = " + name + ", fingerprint = \"" + fingerprint + "\", phone = " + phone + " }";
+        return "Voyager { name = " + name + ", fingerPrint = \"" + fingerPrint + "\", phone = " + phone + " }";
     }
 }

@@ -1,7 +1,6 @@
 package main;
 
 import logging.Logger;
-import ticket.ElectronicTicket;
 import ticket.TicketProducer;
 import train.IntelligentConductor;
 import train.Train;

@@ -1,6 +1,6 @@
 package train;
 
-class Aisle {
+public class Aisle {
     private double conductorFrequency = 0.0;
     private int height = 0;
 

@@ -5,6 +5,10 @@ import ticket.TicketRepository;
 public class EUChip implements IRFIDChip {
     private int ticketId;
 
+    public EUChip() {
+        ticketId = 0;
+    }
+
     public boolean hasValidTicket() {
         return TicketRepository.instance.isTicketIdRegistered(ticketId);
     }

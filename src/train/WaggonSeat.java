@@ -4,13 +4,11 @@ public class WaggonSeat {
     private int seatId = 0;
     private SeatLocation location;
 
-    public WaggonSeat(int id) {
-        seatId = id;
+    public WaggonSeat() {
         location = SeatLocation.left;
     }
 
     public WaggonSeat(SeatLocation seatLocation) {
-        this(0);
         location = seatLocation;
     }
 

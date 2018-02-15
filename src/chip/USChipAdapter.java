@@ -2,6 +2,10 @@ package chip;
 
 public class USChipAdapter extends USChip implements IRFIDChip {
 
+    public USChipAdapter() {
+        super();
+    }
+
     public boolean hasValidTicket() {
         return super.hasValidTicketUS();
     }

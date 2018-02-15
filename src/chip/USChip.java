@@ -5,15 +5,21 @@ import ticket.TicketRepository;
 public class USChip {
     protected int ticketId;
 
-    public boolean hasValidTicketUS() {
+    // Protected access because an instance of USChip should only be created
+    // by using the USChipAdapter
+    protected USChip() {
+        ticketId = 0;
+    }
+
+    protected boolean hasValidTicketUS() {
         return TicketRepository.instance.isTicketIdRegistered(ticketId);
     }
 
-    public int readTicketIdUS() {
+    protected int readTicketIdUS() {
         return ticketId;
     }
 
-    public void setTicketIdUS(int id) {
+    protected void setTicketIdUS(int id) {
         ticketId = id;
     }
 

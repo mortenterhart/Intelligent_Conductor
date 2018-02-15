@@ -1,5 +1,6 @@
 package ticket;
 
+import train.Train;
 import voyager.Voyager;
 
 import java.util.HashMap;
@@ -8,7 +9,11 @@ import java.util.Map;
 public enum TicketRepository {
     instance;
 
-    private int numberOfTickets = 50;
+    /**
+     * numberOfTickets is initialized with the total number of seats so that there
+     * is an equal amount of tickets and corresponding seats.
+     */
+    public final int numberOfTickets = Train.getInstance().getWaggon().getTotalNumberOfSeats();
     public final Map<Integer, ElectronicTicket> repository = new HashMap<>(numberOfTickets);
 
     /**
