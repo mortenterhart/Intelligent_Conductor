@@ -29,6 +29,25 @@ public class Voyager {
         this.phone = phone;
     }
 
+    /**
+     * Checks if this voyager hosts an instance of MPhone different from null.
+     *
+     * @return true if the phone instance is non-null, false otherwise.
+     */
+    public boolean hasPhone() {
+        return phone != null;
+    }
+
+    /**
+     * Investigates if this voyager has a corresponding ticket inside the ticket
+     * repository and returns true if so.
+     *
+     * @return true if this voyager has bought a ticket, false otherwise.
+     */
+    public boolean hasTicketBought() {
+        return TicketRepository.instance.hasTicketBought(this);
+    }
+
     public String getName() {
         return name;
     }
@@ -47,25 +66,6 @@ public class Voyager {
 
     public MPhone getPhone() {
         return phone;
-    }
-
-    /**
-     * Checks if this voyager hosts an instance of MPhone different from null.
-     *
-     * @return true if the phone instance is non-null, false otherwise.
-     */
-    public boolean hasPhone() {
-        return phone != null;
-    }
-
-    /**
-     * Investigates if this voyager has a corresponding ticket inside the ticket
-     * repository and returns true if so.
-     *
-     * @return true if this voyager has bought a ticket, false otherwise.
-     */
-    public boolean hasTicketBought() {
-        return TicketRepository.instance.hasTicketBought(this);
     }
 
     public void setPhone(MPhone phone) {
