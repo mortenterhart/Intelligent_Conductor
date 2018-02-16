@@ -21,7 +21,7 @@ import java.util.Set;
  * <p>
  * The repository memory is organized by mapping the unique ticket
  * id to the ticket instance.
- * Example: <code>5 -> Ticket { ticketId, voyager, ... }</code>
+ * Example: <code>5 -&lt; Ticket { ticketId, voyager, ... }</code>
  */
 public enum TicketRepository {
     /**

@@ -181,7 +181,7 @@ public class TicketProducer {
      * and returns it. Uses the random generator {@link random.MersenneTwisterFast}.
      *
      * @param enumType the class object holding the enumeration type
-     * @param <E>      the type qualifier ensuring the class is a subclass of Enum<\E>
+     * @param <E>      the type qualifier ensuring the class is a subclass of Enum&gt;E&lt;
      * @return the enumeration constant of type E
      */
     private static <E extends Enum<E>> E randomEnumConstant(Class<E> enumType) {
