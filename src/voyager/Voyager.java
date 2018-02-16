@@ -2,6 +2,12 @@ package voyager;
 
 import ticket.TicketRepository;
 
+/**
+ * This class describes the Voyager object model. A voyager
+ * is a person entering the train in order to travel to another
+ * location. A voyager has a name, a fingerprint signature and
+ * a mobile phone holding an {@link chip.IRFIDChip}.
+ */
 public class Voyager {
     private String name;
     private String fingerPrint;
@@ -43,10 +49,21 @@ public class Voyager {
         return phone;
     }
 
+    /**
+     * Checks if this voyager hosts an instance of MPhone different from null.
+     *
+     * @return true if the phone instance is non-null, false otherwise.
+     */
     public boolean hasPhone() {
         return phone != null;
     }
 
+    /**
+     * Investigates if this voyager has a corresponding ticket inside the ticket
+     * repository and returns true if so.
+     *
+     * @return true if this voyager has bought a ticket, false otherwise.
+     */
     public boolean hasTicketBought() {
         return TicketRepository.instance.hasTicketBought(this);
     }

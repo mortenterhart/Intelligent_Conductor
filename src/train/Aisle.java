@@ -1,5 +1,10 @@
 package train;
 
+/**
+ * As part of the {@link Waggon}, the Aisle is created
+ * within the Waggon class. It provides the conductor's
+ * frequency and a custom height.
+ */
 public class Aisle {
     private double conductorFrequency = 0.0;
     private int height = 0;
