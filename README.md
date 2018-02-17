@@ -14,9 +14,9 @@ liest der intelligente Zugbegleiter den RFID-Chip der Variante EU. Für das Aus
 der Variante US nutzt der intelligente Zugbegleiter einen Adapter.
 
 ## Wichtige Zielsetzungen
-a) Wiederholung und Vertiefung des Wissens zu Design Patterns.
-b) Praktische Anwendung der Design Patterns auf komplexe Aufgabenstellungen.
-c) Optimale Klausurvorbereitung im Hinblick auf eine vorzugsweise sehr gute Bewertung.
+1. Wiederholung und Vertiefung des Wissens zu Design Patterns.
+2. Praktische Anwendung der Design Patterns auf komplexe Aufgabenstellungen.
+3. Optimale Klausurvorbereitung im Hinblick auf eine vorzugsweise sehr gute Bewertung.
 
 ## UML Class Diagram
 <img src="uml/intellij/Intelligent_Conductor_class_diagram.png" alt="Intelligent Conductor Class Diagram" />
