@@ -1,0 +1,835 @@
+[2018-02-17 02:52:19]: ## Initializing tickets and conductor (Application.initialize())
+[2018-02-17 02:52:19]: --- Started producing tickets for all available seats (TicketProducer.produceTickets())
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 0
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 1
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 2
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 3
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 4
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 5
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 6
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 7
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 8
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 9
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 10
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 11
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 12
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 13
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 14
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 15
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 16
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 17
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 18
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 19
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 20
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 21
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 22
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 23
+[2018-02-17 02:52:20]: > Producing ticket for left seat with id 24
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 25
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 26
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 27
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 28
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 29
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 30
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 31
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 32
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 33
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 34
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 35
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 36
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 37
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 38
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 39
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 40
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 41
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 42
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 43
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 44
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 45
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 46
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 47
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 48
+[2018-02-17 02:52:20]: > Producing ticket for right seat with id 49
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: --- Producing corrupt tickets to be identified by the conductor (TicketProducer.produceInvalidTickets())
+[2018-02-17 02:52:20]: > Producing voyager without building ticket (fare dodger)
+[2018-02-17 02:52:20]:    -> Voyager 'Daniel Vagabond' should be found by the intelligent conductor
+[2018-02-17 02:52:20]: > Producing voyager with disparate ticket id on RFIDChip that is not registered in the ticket repository
+[2018-02-17 02:52:20]:    -> Voyager 'Donald Trump' should be found by the intelligent conductor
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: --- Fetching list of voyagers to be checked by the conductor (IntelligentConductor.init())
+[2018-02-17 02:52:20]: > Tickets were produced, conductor received list of passengers.
+[2018-02-17 02:52:20]: > Shuffling the list of passengers randomly to hide invalid tickets!
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: ## Starting Application "Intelligent Conductor" (Application.execute())
+[2018-02-17 02:52:20]: --- Printing all passengers (IntelligentConductor.printPassengerList())
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Donald Trump' (Fingerprint "It's all fake news!") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Daniel Vagabond' (Fingerprint "Hopefully nobody notices!") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is on board.
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: --- Checking tickets of passengers (IntelligentConductor.checkTickets())
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 36
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 36, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 36 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 36, location = right, sourceLocation = Berlin, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 45
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 45, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 45 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 45, location = right, sourceLocation = Hamburg, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 9
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 9, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 9 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 9, location = left, sourceLocation = Berlin, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 47
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 47, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 47 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 47, location = right, sourceLocation = Cologne, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 30
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 30, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 30 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 30, location = right, sourceLocation = Hamburg, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 48
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 48, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 48 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 48, location = right, sourceLocation = Berlin, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 2
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 2, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 2 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 2, location = left, sourceLocation = Hamburg, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 38
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 38, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 38 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 38, location = right, sourceLocation = Berlin, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 46
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 46, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 46 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 46, location = right, sourceLocation = Berlin, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 4
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 4, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 4 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 4, location = left, sourceLocation = Berlin, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 37
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 37, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 37 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 37, location = right, sourceLocation = Cologne, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Donald Trump' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Invalid ticket recognized: Passenger 'Donald Trump' (Fingerprint "It's all fake news!") counterfeited his/her ticket!
+[2018-02-17 02:52:20]:   Chip ID 53 not registered as ticket!
+[2018-02-17 02:52:20]:   ** Throwing passenger out and destroying invalid ticket! **
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 34
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 34, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 34 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 34, location = right, sourceLocation = Hamburg, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 23
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 23, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 23 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 23, location = left, sourceLocation = Cologne, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 7
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 7, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 7 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 7, location = left, sourceLocation = Hamburg, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 42
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 42, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 42 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 42, location = right, sourceLocation = Berlin, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 39
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 39, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 39 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 39, location = right, sourceLocation = Berlin, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 6
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 6, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 6 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 6, location = left, sourceLocation = Hamburg, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 43
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 43, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 43 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 43, location = right, sourceLocation = Hamburg, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 5
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 5, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 5 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 5, location = left, sourceLocation = Berlin, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 22
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 22, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 22 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 22, location = left, sourceLocation = Hamburg, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 44
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 44, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 44 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 44, location = right, sourceLocation = Berlin, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 26
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 26, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 26 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 26, location = right, sourceLocation = Hamburg, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 20
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 20, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 20 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 20, location = left, sourceLocation = Berlin, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 13
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 13, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 13 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 13, location = left, sourceLocation = Berlin, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 33
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 33, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 33 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 33, location = right, sourceLocation = Cologne, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 32
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 32, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 32 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 32, location = right, sourceLocation = Berlin, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 0
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 0, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 0 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 0, location = left, sourceLocation = Berlin, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 10
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 10, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 10 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 10, location = left, sourceLocation = Berlin, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 49
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 49, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 49 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 49, location = right, sourceLocation = Hamburg, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 11
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 11, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 11 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 11, location = left, sourceLocation = Cologne, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 29
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 29, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 29 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 29, location = right, sourceLocation = Berlin, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 25
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 25, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 25 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 25, location = right, sourceLocation = Hamburg, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 8
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 8, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 8 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 8, location = left, sourceLocation = Cologne, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 24
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 24, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 24 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 24, location = left, sourceLocation = Berlin, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 18
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 18, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 18 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 18, location = left, sourceLocation = Berlin, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 40
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 40, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 40 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 40, location = right, sourceLocation = Cologne, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 3
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 3, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 3 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 3, location = left, sourceLocation = Hamburg, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 28
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 28, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 28 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 28, location = right, sourceLocation = Cologne, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 15
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 15, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 15 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 15, location = left, sourceLocation = Cologne, destinationLocation = Heidelberg }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 21
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 21, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 21 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 21, location = left, sourceLocation = Berlin, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 31
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 31, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 31 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 31, location = right, sourceLocation = Berlin, destinationLocation = Stuttgart }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 41
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 41, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 41 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 41, location = right, sourceLocation = Hamburg, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 35
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 35, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 35 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 35, location = right, sourceLocation = Hamburg, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Right' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'USChip 1.4' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Right' (Fingerprint "Thumbs down") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 27
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 27, voyager = { Voyager { name = Dr. Right, fingerPrint = "Thumbs down", phone = MPhone { chip = USChip { ticketId = 27 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = SECOND class, seat = WaggonSeat { seatId = 27, location = right, sourceLocation = Berlin, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 16
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 16, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 16 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 16, location = left, sourceLocation = Cologne, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 14
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 14, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 14 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 14, location = left, sourceLocation = Berlin, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 1
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 1, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 1 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 1, location = left, sourceLocation = Cologne, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Daniel Vagabond' for his/her phone
+[2018-02-17 02:52:20]:   > There is a vagabond aboard: Fare Dodger Daniel Vagabond (Fingerprint "Hopefully nobody notices!") has no ticket!
+[2018-02-17 02:52:20]:   Chip ID: 52
+[2018-02-17 02:52:20]:   ** Throwing passenger out! **
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 17
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 17, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 17 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 17, location = left, sourceLocation = Hamburg, destinationLocation = Munich }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 19
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 19, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 19 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 19, location = left, sourceLocation = Cologne, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Asking passenger 'Dr. Left' for his/her phone
+[2018-02-17 02:52:20]: > Scanning RFID Chip of type 'EUChip 1.1' with scanning device
+[2018-02-17 02:52:20]:   > Passenger 'Dr. Left' (Fingerprint "Thumbs up") is registered to a valid ticket.
+[2018-02-17 02:52:20]:   Chip ID: 12
+[2018-02-17 02:52:20]:   Ticket information: ElectronicTicket { ticketId = 12, voyager = { Voyager { name = Dr. Left, fingerPrint = "Thumbs up", phone = MPhone { chip = EUChip { ticketId = 12 } } }, travelTime = Sat Feb 17 02:52:20 CET 2018, travelCategory = FIRST class, seat = WaggonSeat { seatId = 12, location = left, sourceLocation = Hamburg, destinationLocation = Dresden }
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: --- Printing remaining tickets (IntelligentConductor.printRemainingTickets())
+[2018-02-17 02:52:20]: > Ticket  0:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        0 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  1:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        1 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  2:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        2 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  3:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        3 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  4:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        4 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  5:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        5 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  6:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        6 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  7:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        7 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  8:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        8 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket  9:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        9 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 10:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        10 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 11:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        11 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 12:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        12 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 13:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        13 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 14:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        14 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 15:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        15 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 16:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        16 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 17:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        17 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 18:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        18 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 19:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        19 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 20:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        20 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 21:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        21 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 22:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        22 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 23:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        23 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 24:
+[2018-02-17 02:52:20]:     voyager:     Dr. Left
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: FIRST class
+[2018-02-17 02:52:20]:     seat:        24 on the left side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 25:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        25 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 26:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        26 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 27:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        27 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 28:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        28 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 29:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        29 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 30:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        30 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 31:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        31 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 32:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        32 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 33:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        33 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 34:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        34 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 35:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        35 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 36:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        36 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 37:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        37 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 38:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        38 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 39:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        39 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 40:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        40 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Heidelberg
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 41:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        41 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 42:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        42 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 43:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        43 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Munich
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 44:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        44 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 45:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        45 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 46:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        46 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 47:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        47 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Cologne
+[2018-02-17 02:52:20]:     destination: Stuttgart
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 48:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        48 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Berlin
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: > Ticket 49:
+[2018-02-17 02:52:20]:     voyager:     Dr. Right
+[2018-02-17 02:52:20]:     travelTime:  Sat Feb 17 02:52:20 CET 2018
+[2018-02-17 02:52:20]:     travelClass: SECOND class
+[2018-02-17 02:52:20]:     seat:        49 on the right side of the waggon
+[2018-02-17 02:52:20]:     source:      Hamburg
+[2018-02-17 02:52:20]:     destination: Dresden
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: 
+[2018-02-17 02:52:20]: ## Preparing Application for shutdown by closing resources (Application.prepareShutdown)
