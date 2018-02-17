@@ -12,3 +12,7 @@ Varianten EU und US. Der intelligente Zugbegleiter besucht sukzessive die belegt
 überprüft die Tickets anhand der registrierten Tickets im zentralen Repository. Standardmäßig
 liest der intelligente Zugbegleiter den RFID-Chip der Variante EU. Für das Auslesen des RFID-Chips
 der Variante US nutzt der intelligente Zugbegleiter einen Adapter.
+
+## UML Class Diagram
+<img src="uml/Intelligent_Conductor_class_diagram.png" alt="Intelligent Conductor Class Diagram" />
+
