@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="114.99999999999977" y="157.0">train.TravelClass</node>
+    <node x="2061.8880535339413" y="2802.5">logging.Logger</node>
+    <node x="710.2361394270929" y="1287.0">chip.IRFIDChip</node>
+    <node x="1841.0711309523808" y="3812.0">main.Application</node>
+    <node x="717.1198831078759" y="2791.0">voyager.Voyager</node>
+    <node x="1903.5071906529147" y="1574.0">random.MersenneTwisterFast</node>
+    <node x="1650.2571906529147" y="123.0">train.WaggonSeat</node>
+    <node x="1728.0905239862482" y="0.0">train.SeatLocation</node>
+    <node x="291.4532164412092" y="135.0">ticket.Destination</node>
+    <node x="1151.9997023809522" y="1188.0">ticket.TicketRepository</node>
+    <node x="1361.2020833333331" y="2536.0">chip.USChip</node>
+    <node x="1788.0071906529147" y="482.0">train.Waggon</node>
+    <node x="1333.5354166666666" y="2824.0">chip.USChipAdapter</node>
+    <node x="1813.5071906529147" y="930.5">train.Train</node>
+    <node x="1910.0071906529147" y="2548.0">main.Configuration</node>
+    <node x="763.1823831078759" y="2558.0">voyager.MPhone</node>
+    <node x="401.1198831078759" y="1982.5">conductor.ScanningDevice</node>
+    <node x="0.0" y="146.0">ticket.Source</node>
+    <node x="1348.1636234014527" y="3150.0">ticket.TicketProducer</node>
+    <node x="93.61988310787592" y="843.0">ticket.ElectronicTicket</node>
+    <node x="277.7333333333331" y="394.0">ticket.ElectronicTicket.TicketBuilder</node>
+    <node x="1916.5071906529147" y="134.5">train.Aisle</node>
+    <node x="1044.119883107876" y="1937.0">chip.EUChip</node>
+    <node x="429.4532164412092" y="168.0">ticket.IBuilder</node>
+    <node x="585.0135777477881" y="3545.0">conductor.IntelligentConductor</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="conductor.IntelligentConductor" target="ticket.ElectronicTicket">
+      <point x="-111.14999999999998" y="-103.5" />
+      <point x="597.3635777477881" y="3525.0" />
+      <point x="127.08024441445468" y="3525.0" />
+      <point x="127.08024441445468" y="1168.0" />
+      <point x="115.28654977454266" y="1168.0" />
+      <point x="-108.33333333333326" y="147.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.Source">
+      <point x="-117.33333333333326" y="-169.5" />
+      <point x="292.39999999999986" y="344.0" />
+      <point x="66.5" y="344.0" />
+      <point x="19.0" y="47.5" />
+    </edge>
+    <edge source="conductor.ScanningDevice" target="ticket.ElectronicTicket">
+      <point x="-98.33333333333326" y="-47.5" />
+      <point x="450.28654977454266" y="1554.0" />
+      <point x="194.86154006811944" y="1554.0" />
+      <point x="194.86154006811944" y="1168.0" />
+      <point x="245.28654977454266" y="1168.0" />
+      <point x="21.666666666666742" y="147.5" />
+    </edge>
+    <edge source="conductor.IntelligentConductor" target="main.Configuration">
+      <point x="86.45000000000005" y="-103.5" />
+      <point x="794.9635777477881" y="3515.0" />
+      <point x="2051.3880535339413" y="3515.0" />
+      <point x="2051.3880535339413" y="2771.0" />
+      <point x="2064.0071906529147" y="2771.0" />
+      <point x="0.0" y="80.5" />
+    </edge>
+    <edge source="logging.Logger" target="main.Configuration">
+      <point x="0.0" y="-103.0" />
+      <point x="2168.3880535339413" y="2771.0" />
+      <point x="2166.673857319581" y="2771.0" />
+      <point x="102.66666666666652" y="80.5" />
+    </edge>
+    <edge source="chip.USChip" target="ticket.TicketRepository">
+      <point x="0.0" y="-92.5" />
+      <point x="1480.2020833333331" y="1554.0" />
+      <point x="1419.9282738095235" y="1554.0" />
+      <point x="97.42857142857133" y="158.0" />
+    </edge>
+    <edge source="conductor.ScanningDevice" target="ticket.TicketRepository">
+      <point x="98.33333333333337" y="-47.5" />
+      <point x="646.9532164412093" y="1554.0" />
+      <point x="1176.356845238095" y="1554.0" />
+      <point x="-146.1428571428571" y="158.0" />
+    </edge>
+    <edge source="main.Application" target="train.Train">
+      <point x="65.5" y="-114.5" />
+      <point x="2037.5711309523808" y="3782.0" />
+      <point x="2285.3880535339413" y="3782.0" />
+      <point x="2285.3880535339413" y="1168.0" />
+      <point x="1943.0071906529147" y="1168.0" />
+      <point x="37.0" y="60.0" />
+    </edge>
+    <edge source="conductor.IntelligentConductor" target="ticket.TicketRepository">
+      <point x="37.05000000000007" y="-103.5" />
+      <point x="745.5635777477881" y="3495.0" />
+      <point x="1296.619883107876" y="3495.0" />
+      <point x="1296.619883107876" y="1554.0" />
+      <point x="1371.2139880952377" y="1554.0" />
+      <point x="48.71428571428555" y="158.0" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="ticket.TicketRepository">
+      <point x="0.0" y="-147.5" />
+      <point x="1608.1636234014527" y="3130.0" />
+      <point x="1609.7020833333331" y="3130.0" />
+      <point x="1609.7020833333331" y="1544.0" />
+      <point x="1468.6425595238093" y="1544.0" />
+      <point x="146.1428571428571" y="158.0" />
+    </edge>
+    <edge source="conductor.IntelligentConductor" target="ticket.TicketProducer">
+      <point x="61.75" y="-103.5" />
+      <point x="770.2635777477881" y="3505.0" />
+      <point x="1478.1636234014527" y="3505.0" />
+      <point x="-130.0" y="147.5" />
+    </edge>
+    <edge source="main.Application" target="ticket.TicketProducer">
+      <point x="-21.833333333333258" y="-114.5" />
+      <point x="1950.2377976190476" y="3772.0" />
+      <point x="1738.1636234014527" y="3772.0" />
+      <point x="130.0" y="147.5" />
+    </edge>
+    <edge source="train.Waggon" target="train.Aisle">
+      <point x="33.71428571428578" y="-81.5" />
+      <point x="1939.7214763672005" y="374.0" />
+      <point x="1954.1738573195817" y="374.0" />
+      <point x="-75.33333333333326" y="59.0" />
+    </edge>
+    <edge source="conductor.ScanningDevice" target="chip.IRFIDChip">
+      <point x="0.0" y="-47.5" />
+      <point x="548.6198831078759" y="1534.0" />
+      <point x="725.9504251413787" y="1534.0" />
+      <point x="-94.28571428571422" y="59.0" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="voyager.Voyager">
+      <point x="29.333333333333258" y="169.5" />
+      <point x="439.0666666666664" y="803.0" />
+      <point x="1033.619883107876" y="803.0" />
+      <point x="1033.619883107876" y="2751.0" />
+      <point x="904.8073831078759" y="2751.0" />
+      <point x="51.1875" y="-114.5" />
+    </edge>
+    <edge source="ticket.TicketRepository" target="ticket.ElectronicTicket">
+      <point x="-127.875" y="-158.0" />
+      <point x="1194.6247023809522" y="1168.0" />
+      <point x="288.6198831078759" y="1168.0" />
+      <point x="65.0" y="147.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket" target="ticket.Source">
+      <point x="-119.16666666666674" y="-147.5" />
+      <point x="104.45321644120918" y="823.0" />
+      <point x="23.0" y="823.0" />
+      <point x="23.0" y="374.0" />
+      <point x="28.5" y="374.0" />
+      <point x="-19.0" y="47.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="main.Configuration">
+      <point x="218.94736842105272" y="-147.5" />
+      <point x="1827.1109918225056" y="3120.0" />
+      <point x="1945.6117377444675" y="3120.0" />
+      <point x="1945.6117377444675" y="2771.0" />
+      <point x="1961.3405239862482" y="2771.0" />
+      <point x="-102.66666666666674" y="80.5" />
+    </edge>
+    <edge source="chip.USChipAdapter" target="chip.USChip">
+      <point x="73.33333333333326" y="-81.5" />
+      <point x="1516.8687499999996" y="2771.0" />
+      <point x="1539.7020833333331" y="2771.0" />
+      <point x="59.5" y="92.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.TicketRepository">
+      <point x="58.66666666666663" y="169.5" />
+      <point x="468.39999999999975" y="793.0" />
+      <point x="1365.1247023809522" y="793.0" />
+      <point x="42.625" y="-158.0" />
+    </edge>
+    <edge source="chip.USChipAdapter" target="chip.IRFIDChip">
+      <point x="-73.33333333333326" y="-81.5" />
+      <point x="1370.2020833333331" y="2741.0" />
+      <point x="1022.6198831078759" y="2741.0" />
+      <point x="1022.6198831078759" y="1534.0" />
+      <point x="883.0932822842358" y="1534.0" />
+      <point x="62.85714285714289" y="59.0" />
+    </edge>
+    <edge source="voyager.MPhone" target="chip.EUChip">
+      <point x="71.66666666666663" y="-70.5" />
+      <point x="942.3490497745424" y="2511.0" />
+      <point x="1099.119883107876" y="2511.0" />
+      <point x="-55.0" y="93.0" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="chip.EUChip">
+      <point x="-54.73684210526312" y="-147.5" />
+      <point x="1553.4267812961898" y="3050.0" />
+      <point x="1209.119883107876" y="3050.0" />
+      <point x="55.0" y="93.0" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="train.WaggonSeat">
+      <point x="136.84210526315792" y="-147.5" />
+      <point x="1745.0057286646106" y="3130.0" />
+      <point x="1765.9794128751369" y="3130.0" />
+      <point x="1765.9794128751369" y="374.0" />
+      <point x="1797.5349684306925" y="374.0" />
+      <point x="26.77777777777783" y="70.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.Destination">
+      <point x="29.33333333333337" y="-169.5" />
+      <point x="439.0666666666665" y="294.0" />
+      <point x="374.0532164412092" y="294.0" />
+      <point x="23.599999999999994" y="58.5" />
+    </edge>
+    <edge source="voyager.Voyager" target="voyager.MPhone">
+      <point x="17.0625" y="-114.5" />
+      <point x="0.0" y="70.5" />
+    </edge>
+    <edge source="chip.EUChip" target="ticket.TicketRepository">
+      <point x="55.0" y="-93.0" />
+      <point x="1209.119883107876" y="1554.0" />
+      <point x="1225.0711309523808" y="1554.0" />
+      <point x="-97.42857142857133" y="158.0" />
+    </edge>
+    <edge source="main.Application" target="conductor.IntelligentConductor">
+      <point x="-109.16666666666652" y="-114.5" />
+      <point x="1862.9044642857143" y="3792.0" />
+      <point x="646.7635777477881" y="3792.0" />
+      <point x="-61.75" y="103.5" />
+    </edge>
+    <edge source="conductor.IntelligentConductor" target="conductor.ScanningDevice">
+      <point x="-61.749999999999886" y="-103.5" />
+      <point x="646.7635777477882" y="3505.0" />
+      <point x="500.11154006811944" y="3505.0" />
+      <point x="500.11154006811944" y="2511.0" />
+      <point x="622.3698831078759" y="2511.0" />
+      <point x="73.75" y="47.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="logging.Logger">
+      <point x="246.31578947368416" y="-147.5" />
+      <point x="1854.4794128751369" y="3130.0" />
+      <point x="2097.3880535339413" y="3130.0" />
+      <point x="-71.0" y="103.0" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.IBuilder">
+      <point x="58.666666666666686" y="-169.5" />
+      <point x="468.39999999999986" y="374.0" />
+      <point x="489.4532164412092" y="374.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="train.TravelClass">
+      <point x="-218.9473684210525" y="-147.5" />
+      <point x="1389.2162549804002" y="3110.0" />
+      <point x="45.703216441209406" y="3110.0" />
+      <point x="45.703216441209406" y="364.0" />
+      <point x="126.79999999999973" y="364.0" />
+      <point x="-47.200000000000045" y="36.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket" target="voyager.Voyager">
+      <point x="-21.66666666666663" y="147.5" />
+      <point x="201.9532164412093" y="1158.0" />
+      <point x="183.86154006811944" y="1158.0" />
+      <point x="183.86154006811944" y="2761.0" />
+      <point x="768.3073831078759" y="2761.0" />
+      <point x="-85.3125" y="-114.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="chip.IRFIDChip">
+      <point x="-82.10526315789457" y="-147.5" />
+      <point x="1526.0583602435581" y="3060.0" />
+      <point x="1011.6198831078759" y="3060.0" />
+      <point x="1011.6198831078759" y="1544.0" />
+      <point x="851.6647108556643" y="1544.0" />
+      <point x="31.428571428571445" y="59.0" />
+    </edge>
+    <edge source="train.WaggonSeat" target="train.SeatLocation">
+      <point x="60.25" y="-70.5" />
+      <point x="1831.0071906529147" y="103.0" />
+      <point x="1792.0905239862482" y="103.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="voyager.Voyager">
+      <point x="-191.5789473684208" y="-147.5" />
+      <point x="1416.5846760330319" y="3100.0" />
+      <point x="853.6198831078759" y="3100.0" />
+      <point x="0.0" y="114.5" />
+    </edge>
+    <edge source="voyager.Voyager" target="ticket.TicketRepository">
+      <point x="85.3125" y="-114.5" />
+      <point x="938.9323831078759" y="2761.0" />
+      <point x="1274.619883107876" y="2761.0" />
+      <point x="-48.71428571428578" y="158.0" />
+    </edge>
+    <edge source="main.Configuration" target="random.MersenneTwisterFast">
+      <point x="-77.0" y="-80.5" />
+      <point x="-83.5" y="456.0" />
+    </edge>
+    <edge source="ticket.ElectronicTicket" target="ticket.Destination">
+      <point x="-10.833333333333371" y="-147.5" />
+      <point x="212.78654977454255" y="763.0" />
+      <point x="243.70321644120918" y="763.0" />
+      <point x="243.70321644120918" y="374.0" />
+      <point x="326.85321644120916" y="374.0" />
+      <point x="-23.600000000000023" y="58.5" />
+    </edge>
+    <edge source="conductor.IntelligentConductor" target="voyager.Voyager">
+      <point x="12.350000000000023" y="-103.5" />
+      <point x="720.8635777477881" y="3485.0" />
+      <point x="756.2615400681193" y="3485.0" />
+      <point x="756.2615400681193" y="3130.0" />
+      <point x="799.0198831078758" y="3130.0" />
+      <point x="-54.60000000000002" y="114.5" />
+    </edge>
+    <edge source="train.Waggon" target="train.SeatLocation">
+      <point x="0.0" y="-81.5" />
+      <point x="1906.0071906529147" y="93.0" />
+      <point x="1834.757190652915" y="93.0" />
+      <point x="42.66666666666674" y="36.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket" target="ticket.ElectronicTicket.TicketBuilder">
+      <point x="10.833333333333314" y="-147.5" />
+      <point x="234.45321644120918" y="773.0" />
+      <point x="292.39999999999986" y="773.0" />
+      <point x="-117.33333333333331" y="169.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket" target="train.TravelClass">
+      <point x="-54.16666666666674" y="-147.5" />
+      <point x="169.45321644120918" y="823.0" />
+      <point x="166.89999999999975" y="823.0" />
+      <point x="166.89999999999975" y="374.0" />
+      <point x="173.99999999999977" y="374.0" />
+      <point x="0.0" y="36.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket" target="train.WaggonSeat">
+      <point x="97.5" y="-147.5" />
+      <point x="321.1198831078759" y="813.0" />
+      <point x="1732.9794128751369" y="813.0" />
+      <point x="1732.9794128751369" y="374.0" />
+      <point x="1717.201635097359" y="374.0" />
+      <point x="-53.55555555555566" y="70.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="train.Train">
+      <point x="164.2105263157896" y="-147.5" />
+      <point x="1772.3741497172423" y="3100.0" />
+      <point x="1828.7571906529147" y="3100.0" />
+      <point x="1828.7571906529147" y="1168.0" />
+      <point x="1869.0071906529147" y="1168.0" />
+      <point x="-37.0" y="60.0" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="ticket.ElectronicTicket.TicketBuilder">
+      <point x="54.73684210526312" y="-147.5" />
+      <point x="1662.900465506716" y="3120.0" />
+      <point x="1631.7020833333331" y="3120.0" />
+      <point x="1631.7020833333331" y="773.0" />
+      <point x="527.0666666666664" y="773.0" />
+      <point x="117.33333333333326" y="169.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="chip.USChipAdapter">
+      <point x="-27.368421052631675" y="-147.5" />
+      <point x="1580.795202348821" y="3040.0" />
+      <point x="1443.5354166666666" y="3040.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="ticket.Source">
+      <point x="-246.31578947368416" y="-147.5" />
+      <point x="1361.8478339277685" y="3120.0" />
+      <point x="12.0" y="3120.0" />
+      <point x="12.0" y="374.0" />
+      <point x="9.5" y="374.0" />
+      <point x="-38.0" y="47.5" />
+    </edge>
+    <edge source="conductor.IntelligentConductor" target="chip.IRFIDChip">
+      <point x="-37.049999999999955" y="-103.5" />
+      <point x="671.4635777477881" y="3465.0" />
+      <point x="706.6198831078759" y="3465.0" />
+      <point x="706.6198831078759" y="1544.0" />
+      <point x="757.37899656995" y="1544.0" />
+      <point x="-62.85714285714289" y="59.0" />
+    </edge>
+    <edge source="chip.EUChip" target="chip.IRFIDChip">
+      <point x="-55.0" y="-93.0" />
+      <point x="1099.119883107876" y="1524.0" />
+      <point x="914.5218537128071" y="1524.0" />
+      <point x="94.28571428571422" y="59.0" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="voyager.MPhone">
+      <point x="-109.47368421052624" y="-147.5" />
+      <point x="1498.6899391909265" y="3070.0" />
+      <point x="1000.6198831078759" y="3070.0" />
+      <point x="1000.6198831078759" y="2741.0" />
+      <point x="942.3490497745424" y="2741.0" />
+      <point x="71.66666666666663" y="70.5" />
+    </edge>
+    <edge source="voyager.MPhone" target="chip.IRFIDChip">
+      <point x="-71.66666666666663" y="-70.5" />
+      <point x="799.0157164412092" y="2511.0" />
+      <point x="776.1647108556643" y="2511.0" />
+      <point x="776.1647108556643" y="1544.0" />
+      <point x="788.8075679985214" y="1544.0" />
+      <point x="-31.428571428571445" y="59.0" />
+    </edge>
+    <edge source="conductor.IntelligentConductor" target="logging.Logger">
+      <point x="111.14999999999998" y="-103.5" />
+      <point x="819.663577747788" y="3525.0" />
+      <point x="2168.3880535339413" y="3525.0" />
+      <point x="0.0" y="103.0" />
+    </edge>
+    <edge source="ticket.TicketRepository" target="train.Train">
+      <point x="127.875" y="-158.0" />
+      <point x="1450.3747023809522" y="1158.0" />
+      <point x="1832.0071906529147" y="1158.0" />
+      <point x="-74.0" y="60.0" />
+    </edge>
+    <edge source="ticket.TicketProducer" target="ticket.Destination">
+      <point x="82.1052631578948" y="-147.5" />
+      <point x="1690.2688865593477" y="3110.0" />
+      <point x="1643.2156610811217" y="3110.0" />
+      <point x="1643.2156610811217" y="284.0" />
+      <point x="397.6532164412092" y="284.0" />
+      <point x="47.200000000000045" y="58.5" />
+    </edge>
+    <edge source="train.Train" target="train.Waggon">
+      <point x="0.0" y="-60.0" />
+      <point x="0.0" y="81.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="train.WaggonSeat">
+      <point x="117.33333333333337" y="-169.5" />
+      <point x="527.0666666666665" y="374.0" />
+      <point x="1690.4238573195817" y="374.0" />
+      <point x="-80.33333333333326" y="70.5" />
+    </edge>
+    <edge source="ticket.TicketRepository" target="voyager.Voyager">
+      <point x="0.0" y="158.0" />
+      <point x="1322.4997023809522" y="1544.0" />
+      <point x="1285.619883107876" y="1544.0" />
+      <point x="1285.619883107876" y="2771.0" />
+      <point x="973.0573831078759" y="2771.0" />
+      <point x="119.4375" y="-114.5" />
+    </edge>
+    <edge source="main.Application" target="logging.Logger">
+      <point x="21.833333333333258" y="-114.5" />
+      <point x="1993.904464285714" y="3772.0" />
+      <point x="2226.8880535339413" y="3772.0" />
+      <point x="2226.8880535339413" y="3130.0" />
+      <point x="2239.3880535339413" y="3130.0" />
+      <point x="71.0" y="103.0" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.ElectronicTicket">
+      <point x="-88.0" y="169.5" />
+      <point x="321.7333333333331" y="783.0" />
+      <point x="256.1198831078759" y="783.0" />
+      <point x="32.5" y="-147.5" />
+    </edge>
+    <edge source="train.Waggon" target="train.WaggonSeat">
+      <point x="-33.71428571428578" y="-81.5" />
+      <point x="1872.292904938629" y="374.0" />
+      <point x="1877.868301764026" y="374.0" />
+      <point x="107.11111111111109" y="70.5" />
+    </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="train.TravelClass">
+      <point x="-58.66666666666663" y="-169.5" />
+      <point x="351.0666666666665" y="324.0" />
+      <point x="197.5999999999998" y="324.0" />
+      <point x="23.600000000000023" y="36.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6801872074882995" x="293.5" y="310.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

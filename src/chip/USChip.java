@@ -13,6 +13,14 @@ public class USChip {
         ticketId = -1;
     }
 
+    /**
+     * Checks whether the ticket saved on the RFID chip is registered
+     * in the ticket repository.
+     *
+     * @return true if the ticket is registered, false otherwise.
+     * @deprecated because the chip should not have access to the ticket repository.
+     * Possible security vulnerability.
+     */
     @Deprecated
     protected boolean hasValidTicketUS() {
         return TicketRepository.instance.isTicketIdRegistered(ticketId);
