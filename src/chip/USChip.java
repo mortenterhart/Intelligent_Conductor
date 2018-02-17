@@ -3,7 +3,8 @@ package chip;
 import ticket.TicketRepository;
 
 public class USChip {
-    protected int ticketId;
+    private int ticketId;
+    private String version = "USChip 1.4";
 
     /**
      * Protected access because an instance of USChip should only be created
@@ -23,7 +24,7 @@ public class USChip {
      */
     @Deprecated
     protected boolean hasValidTicketUS() {
-        return TicketRepository.instance.isTicketIdRegistered(ticketId);
+        return TicketRepository.instance.isTicketRegistered(ticketId);
     }
 
     protected int readTicketIdUS() {
@@ -35,7 +36,7 @@ public class USChip {
     }
 
     protected String getVersionUS() {
-        return "USChip 1.4";
+        return version;
     }
 
     @Override

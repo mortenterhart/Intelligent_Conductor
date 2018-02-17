@@ -4,6 +4,7 @@ import ticket.TicketRepository;
 
 public class EUChip implements IRFIDChip {
     private int ticketId;
+    private String version = "EUChip 1.1";
 
     public EUChip() {
         ticketId = -1;
@@ -19,7 +20,7 @@ public class EUChip implements IRFIDChip {
      */
     @Deprecated
     public boolean hasValidTicket() {
-        return TicketRepository.instance.isTicketIdRegistered(ticketId);
+        return TicketRepository.instance.isTicketRegistered(ticketId);
     }
 
     /**
@@ -46,7 +47,7 @@ public class EUChip implements IRFIDChip {
      * @return a version string
      */
     public String getVersion() {
-        return "EUChip 1.1";
+        return version;
     }
 
     @Override

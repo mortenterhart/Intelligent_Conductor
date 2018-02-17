@@ -288,7 +288,7 @@ public class ElectronicTicket {
          * the ticket repository, sends the ticket to the voyager's phone, reserves
          * the associated seat and returns the instance.
          *
-         * @return the ticket instance
+         * @return the built ticket instance
          */
         public ElectronicTicket build() {
             ElectronicTicket ticket = new ElectronicTicket(this);

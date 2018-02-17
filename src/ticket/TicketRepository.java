@@ -74,7 +74,7 @@ public enum TicketRepository {
      * @param ticketId the ticket id to check
      * @return true if the ticket id is already registered, false otherwise.
      */
-    public boolean isTicketIdRegistered(int ticketId) {
+    public boolean isTicketRegistered(int ticketId) {
         return repository.containsKey(ticketId);
     }
 
@@ -102,6 +102,17 @@ public enum TicketRepository {
             }
         }
         return null;
+    }
+
+    /**
+     * Searches the repository for the specified ticket and returns true if
+     * the ticket was found, false otherwise.
+     *
+     * @param ticket the ticket to search for
+     * @return true if the ticket is inside this repository, false otherwise.
+     */
+    public boolean contains(ElectronicTicket ticket) {
+        return repository.containsValue(ticket);
     }
 
     /**
@@ -151,5 +162,21 @@ public enum TicketRepository {
      */
     public Collection<ElectronicTicket> tickets() {
         return repository.values();
+    }
+
+    /**
+     * Returns the size of this repository.
+     *
+     * @return the number of tickets stored in this repository.
+     */
+    public int size() {
+        return repository.size();
+    }
+
+    /**
+     * Clears the underlying repository by removing all ticket mappings.
+     */
+    public void clear() {
+        repository.clear();
     }
 }

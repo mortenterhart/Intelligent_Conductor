@@ -3,69 +3,69 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="653.0" y="1505.0">train.TravelClass</node>
-    <node x="1482.0" y="957.0">logging.Logger</node>
-    <node x="883.0" y="957.0">main.Application</node>
-    <node x="1082.0" y="33.5">chip.IRFIDChip</node>
-    <node x="565.0" y="957.0">voyager.Voyager</node>
+    <node x="1317.0" y="1636.0">train.TravelClass</node>
+    <node x="289.0" y="1384.0">logging.Logger</node>
+    <node x="879.0" y="44.5">chip.IRFIDChip</node>
+    <node x="1269.0" y="957.0">main.Application</node>
+    <node x="951.0" y="957.0">voyager.Voyager</node>
     <node x="0.0" y="0.0">random.MersenneTwisterFast</node>
-    <node x="634.0" y="1297.0">train.WaggonSeat</node>
-    <node x="480.0" y="1505.0">train.SeatLocation</node>
-    <node x="1402.0" y="0.0">ticket.TicketRepository</node>
-    <node x="1681.0" y="1297.0">ticket.Destination</node>
-    <node x="824.0" y="0.0">chip.USChip</node>
-    <node x="0.0" y="1297.0">train.Waggon</node>
-    <node x="888.0" y="246.5">chip.USChipAdapter</node>
-    <node x="1180.0" y="1297.0">train.Train</node>
-    <node x="281.0" y="1297.0">main.Configuration</node>
-    <node x="920.0" y="1297.0">voyager.MPhone</node>
-    <node x="0.0" y="1505.0">conductor.ScanningDevice</node>
-    <node x="340.0" y="1505.0">ticket.Source</node>
-    <node x="0.0" y="957.0">ticket.TicketProducer</node>
-    <node x="519.0" y="0.0">ticket.ElectronicTicket</node>
-    <node x="412.0" y="345.0">ticket.ElectronicTicket.TicketBuilder</node>
-    <node x="1410.0" y="1297.0">train.Aisle</node>
-    <node x="1137.0" y="235.0">chip.EUChip</node>
-    <node x="379.0" y="122.0">ticket.IBuilder</node>
-    <node x="1190.0" y="957.0">conductor.IntelligentConductor</node>
+    <node x="1181.0" y="1384.0">train.WaggonSeat</node>
+    <node x="1144.0" y="1636.0">train.SeatLocation</node>
+    <node x="501.0" y="1636.0">ticket.Destination</node>
+    <node x="0.0" y="957.0">ticket.TicketRepository</node>
+    <node x="1119.0" y="0.0">chip.USChip</node>
+    <node x="547.0" y="1384.0">train.Waggon</node>
+    <node x="1073.0" y="268.5">chip.USChipAdapter</node>
+    <node x="0.0" y="1636.0">train.Train</node>
+    <node x="828.0" y="1384.0">main.Configuration</node>
+    <node x="1467.0" y="1384.0">voyager.MPhone</node>
+    <node x="664.0" y="1636.0">conductor.ScanningDevice</node>
+    <node x="1004.0" y="1636.0">ticket.Source</node>
+    <node x="379.0" y="0.0">ticket.ElectronicTicket</node>
+    <node x="386.0" y="957.0">ticket.TicketProducer</node>
+    <node x="482.0" y="345.0">ticket.ElectronicTicket.TicketBuilder</node>
+    <node x="230.0" y="1636.0">train.Aisle</node>
+    <node x="824.0" y="257.0">chip.EUChip</node>
+    <node x="659.0" y="122.0">ticket.IBuilder</node>
+    <node x="0.0" y="1384.0">conductor.IntelligentConductor</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="chip.USChipAdapter" target="chip.IRFIDChip">
-      <point x="55.0" y="-81.5" />
-      <point x="1053.0" y="210.0" />
-      <point x="1137.0" y="210.0" />
-      <point x="-55.0" y="59.0" />
-    </edge>
-    <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.IBuilder">
-      <point x="-66.0" y="-169.5" />
-      <point x="795.0" y="223.0" />
-      <point x="439.0" y="320.0" />
-      <point x="0.0" y="25.5" />
-    </edge>
     <edge source="chip.USChipAdapter" target="chip.USChip">
+      <point x="55.0" y="-81.5" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="chip.USChipAdapter" target="chip.IRFIDChip">
       <point x="-55.0" y="-81.5" />
-      <point x="0.0" y="92.5" />
+      <point x="1128.0" y="232.0" />
+      <point x="1044.0" y="232.0" />
+      <point x="55.0" y="59.0" />
     </edge>
     <edge source="chip.EUChip" target="chip.IRFIDChip">
       <point x="0.0" y="-93.0" />
-      <point x="55.0" y="59.0" />
+      <point x="-55.0" y="59.0" />
     </edge>
     <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.ElectronicTicket">
-      <point x="66.0" y="-169.5" />
-      <point x="610.0" y="320.0" />
-      <point x="649.0" y="320.0" />
+      <point x="-66.0" y="-169.5" />
+      <point x="548.0" y="320.0" />
+      <point x="509.0" y="320.0" />
       <point x="0.0" y="147.5" />
     </edge>
+    <edge source="ticket.ElectronicTicket.TicketBuilder" target="ticket.IBuilder">
+      <point x="66.0" y="-169.5" />
+      <point x="680.0" y="320.0" />
+      <point x="719.0" y="320.0" />
+      <point x="0.0" y="25.5" />
+    </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="586.5665137614678" y="278.6559633027523" />
+  <settings layout="Hierarchic Group" zoom="0.6801872074882995" x="299.0" y="310.5" />
   <SelectedNodes />
   <Categories>
-    <Category>Fields</Category>
     <Category>Inner Classes</Category>
-    <Category>Constructors</Category>
     <Category>Properties</Category>
     <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

@@ -23,7 +23,7 @@ public class ScanningDevice {
      * false otherwise.
      */
     public boolean validateTicket(IRFIDChip chip) {
-        return TicketRepository.instance.isTicketIdRegistered(chip.readTicketId());
+        return TicketRepository.instance.isTicketRegistered(chip.readTicketId());
     }
 
     /**

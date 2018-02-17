@@ -46,7 +46,7 @@ public class IntelligentConductor {
         Logger.instance.log("--- Fetching list of voyagers to be checked by the conductor " +
                 "(IntelligentConductor.init())");
         if (TicketProducer.areTicketsProduced()) {
-            passengerList = TicketProducer.getListOfPassengers();
+            passengerList = new ArrayList<>(TicketProducer.getListOfPassengers());
             Logger.instance.log("> Tickets were produced, conductor received list of passengers.");
             Logger.instance.log("> Shuffling the list of passengers randomly to hide invalid tickets!");
 
@@ -145,5 +145,13 @@ public class IntelligentConductor {
             Logger.instance.log("    destination: " + ticket.getDestinationLocation().name());
             Logger.instance.newLine();
         }
+    }
+
+    public List<Voyager> getPassengerList() {
+        return passengerList;
+    }
+
+    public ScanningDevice getScanner() {
+        return scanner;
     }
 }
