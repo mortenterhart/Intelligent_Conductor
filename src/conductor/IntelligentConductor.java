@@ -112,7 +112,8 @@ public class IntelligentConductor {
                     Logger.instance.log("  > Invalid ticket recognized: Passenger '" + passenger.getName() +
                             "' (Fingerprint \"" + passenger.getFingerPrint() + "\") counterfeited his/her ticket!");
                     Logger.instance.log("  Chip ID " + scanner.readChipId(phoneChip) + " not registered as ticket!");
-                    Logger.instance.log("  ** Throwing passenger out and destroying invalid ticket! **");
+                    Logger.instance.log("  ** Throwing passenger '" + passenger.getName() + "' out " +
+                            "and destroying invalid ticket! **");
                     TicketRepository.instance.removeTicket(passenger);
 
                 }
@@ -120,7 +121,7 @@ public class IntelligentConductor {
                 Logger.instance.log("  > There is a vagabond aboard: Fare Dodger " + passenger.getName() +
                         " (Fingerprint \"" + passenger.getFingerPrint() + "\") has no ticket!");
                 Logger.instance.log("  Chip ID: " + scanner.readChipId(passenger.getPhone().getChip()));
-                Logger.instance.log("  ** Throwing passenger out! **");
+                Logger.instance.log("  ** Throwing passenger '" + passenger.getName() + "' out! **");
             }
             Logger.instance.newLine();
         }
