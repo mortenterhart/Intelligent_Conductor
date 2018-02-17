@@ -10,9 +10,22 @@ import random.MersenneTwisterFast;
 public enum Configuration {
     instance;
 
+    /**
+     * user directory path
+     */
     public String userDirectory = System.getProperty("user.dir");
+
+    /**
+     * system specific file separator
+     */
     public String fileSeparator = System.getProperty("file.separator");
+
+    /**
+     * system specific line separator
+     */
     public String lineSeparator = System.lineSeparator();
+
+
 
     /**
      * Log file path used by enum {@link logging.Logger}

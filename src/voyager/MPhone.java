@@ -19,8 +19,10 @@ public class MPhone {
      * The builtin {@link IRFIDChip} implementing the Bridge Design Pattern
      * where the ticket id is stored. This chip reference is used by the scanning
      * device to read the chip id. There are two variants of the IRFIDChip:
-     * * USChip with a special USChipAdapter
-     * * EUChip
+     * <ul>
+     *     <li>{@link chip.USChip} with a special {@link chip.USChipAdapter}</li>
+     *     <li>{@link EUChip}</li>
+     * </ul>
      */
     private IRFIDChip chip;
 
@@ -37,7 +39,7 @@ public class MPhone {
     }
 
     /**
-     * Writes the ticket id <code>id</code> onto the {@link IRFIDChip}
+     * Writes the ticket id <code>id</code> onto the {@link IRFIDChip}.
      *
      * @param id the ticket id to store in the chip
      */
@@ -52,7 +54,6 @@ public class MPhone {
     public IRFIDChip getChip() {
         return chip;
     }
-
 
     @Override
     public String toString() {

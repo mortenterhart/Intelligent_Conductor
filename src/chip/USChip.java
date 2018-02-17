@@ -22,7 +22,7 @@ public class USChip {
         return ticketId;
     }
 
-    protected void setTicketIdUS(int id) {
+    protected void writeTicketIdUS(int id) {
         ticketId = id;
     }
 

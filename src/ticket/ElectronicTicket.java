@@ -22,11 +22,13 @@ import java.util.Date;
  * <p>
  * The ElectronicTicket is constructed by using the {@link TicketBuilder} which automatically
  * does 5 things at one time on-the-fly:
- * - builds the ticket
- * - registers the ticket to the ticket repository
- * - sends the ticket to the voyager's phone
- * - reserves the seat in the train for the voyager
- * - increments the static ticket id counter
+ * <ul>
+ * <li>builds the ticket</li>
+ * <li>registers the ticket to the ticket repository</li>
+ * <li>sends the ticket to the voyager's phone</li>
+ * <li>reserves the seat in the train for the voyager</li>
+ * <li>increments the static ticket id counter</li>
+ * </ul>
  * <p>
  * The {@link TicketBuilder} implements the {@link IBuilder} interface and provides the
  * <code>build()</code> method to construct the resulting ticket.
@@ -162,48 +164,120 @@ public class ElectronicTicket {
          * <code>ticketId</code> is a static number inside the ticket builder which is
          * incremented automatically when a ticked is constructed. It takes care about
          * giving an unique id to each of the tickets.
+         *
+         * @see ElectronicTicket#ticketId
          */
         private static int ticketId = 0;
 
         /**
-         * Same fields as in {@link ElectronicTicket} above.
+         * an instance of a Voyager used to access his phone to send the ticketId to it
+         *
+         * @see ElectronicTicket#voyager
          */
         private Voyager voyager;
+
+        /**
+         * the date of voyage
+         *
+         * @see ElectronicTicket#travelTime
+         */
         private Date travelTime;
+
+        /**
+         * the travel class
+         *
+         * @see ElectronicTicket#travelCategory
+         */
         private TravelClass travelCategory;
+
+        /**
+         * a reserved seat for the voyager
+         *
+         * @see ElectronicTicket#seat
+         */
         private WaggonSeat seat;
+
+        /**
+         * the beginning location
+         *
+         * @see ElectronicTicket#sourceLocation
+         */
         private Source sourceLocation;
+
+        /**
+         * the destination location
+         *
+         * @see ElectronicTicket#destinationLocation
+         */
         private Destination destinationLocation;
 
         /*
         Only setter methods here used for ticket construction.
         No getter methods.
          */
+
+        /**
+         * Applies the voyager <code>voyager</code> to this TicketBuilder instance.
+         *
+         * @param voyager the voyager attribute for the ticket
+         * @return the current TicketBuilder instance.
+         */
         public TicketBuilder setVoyager(Voyager voyager) {
             this.voyager = voyager;
             return this;
         }
 
+        /**
+         * Applies the travel time <code>time</code> to this TicketBuilder instance.
+         *
+         * @param time the travel time attribute for the ticket
+         * @return the current TicketBuilder instance.
+         */
         public TicketBuilder setTravelTime(Date time) {
             travelTime = time;
             return this;
         }
 
+        /**
+         * Applies the the travel category <code>category</code> to this TicketBuilder
+         * instance.
+         *
+         * @param category the travel category attribute for the ticket
+         * @return the current TicketBuilder instance.
+         */
         public TicketBuilder setTravelCategory(TravelClass category) {
             travelCategory = category;
             return this;
         }
 
+        /**
+         * Applies the seat <code>seat</code> to this TicketBuilder instance.
+         *
+         * @param seat the seat attribute for the ticket
+         * @return the current TicketBuilder instance.
+         */
         public TicketBuilder setSeat(WaggonSeat seat) {
             this.seat = seat;
             return this;
         }
 
+        /**
+         * Applies the source location <code>source</code> to this TicketBuilder instance.
+         *
+         * @param source the source location attribute for the ticket
+         * @return the current TicketBuilder instance.
+         */
         public TicketBuilder setSourceLocation(Source source) {
             sourceLocation = source;
             return this;
         }
 
+        /**
+         * Applies the destination location <code>destination</code> to this TicketBuilder instance.
+         *
+         * @param destination the destination location attribute for the ticket
+         * @return the current TicketBuilder instance.
+         */
         public TicketBuilder setDestinationLocation(Destination destination) {
             destinationLocation = destination;
             return this;
