@@ -1,8 +1,20 @@
-# Design Patterns Team (DPT) - Intelligent Conductor
+# Design Patterns Team (DPT) - Intelligent Conductor (T03)
 
 **Used Design Patterns:** Builder, Bridge, Adapter
+* Assigned Task: T03 Intelligent Conductor
 
-## Assignment of task T03
+## Project structure
+* [Complete Java Documentation](doc)
+* [Bundled Artifact](jar)
+* [Log file with all execution information](log)
+* [Manifest file](META-INF)
+* [Java Source Files](src)
+* [JUnit 4 Tests](test)
+* [UML Class Diagrams](uml)
+    * [with Enterprise Architect](uml/enterprise-architect)
+    * [with Intellij](uml/intellij)
+
+## Assignment of task (T03)
 Ein Zug hat einen Waggon. Dieser Waggon hat auf der linken und rechten Seite je 25 Sitzplätze –
 getrennt durch einen Gang. Das elektronische Ticket besteht aus den Informationen Reisender
 (name und fingerPrint), Datum, Klasse sowie Strecke von und nach. Ein Builder erstellt das Ticket
@@ -28,7 +40,7 @@ der Variante US nutzt der intelligente Zugbegleiter einen Adapter.
 * Studium der Struktur und Funktionsweise der beteiligten Design Patterns.
 * Verwendung geeigneter englischer Begriffe für Namen und Bezeichnungen.
 * Modellierung von zwei Klassendiagrammen in Enterprise Architect. Bitte
-   * nutzen Sie das Theme „DHBW“ (Visual Style → Visual Appearance → Diagram).
+   * nutzen Sie das Theme „DHBW“ (Visual Style -> Visual Appearance -> Diagram).
    * legen Sie für jede Aufgabe ein separates Klassendiagramm an.
    * benennen Sie das Klassendiagramm mit task<id>, z.B. task50.
    * benennen Sie die Datei mit <team_id>_<task_id>.eap, z.B. 03_50.eap.
@@ -39,7 +51,7 @@ der Variante US nutzt der intelligente Zugbegleiter einen Adapter.
    * nutzen Sie die camelCase-Notation, um die Lesbarkeit zu vereinfachen.
 * Test der Implementierung mit JUnit und Gewährleistung der Funktionsweise.
 * Modellierung und Implementierung wird mit je 5 Punkten pro Aufgabe bewertet.
-* Erstellung einer vollständigen und verschlüsselten 7-Zip-Datei unter Beachtungdes Prozedere für die Abgabe von Prüfungsleistungen und der Namenskonvention.
+* Erstellung einer vollständigen und verschlüsselten 7-Zip-Datei unter Beachtung des Prozedere für die Abgabe von Prüfungsleistungen und der Namenskonvention.
 * Zeitansatz: 10 Stunden
 * Abgabetermin: Sonntag, 18.02.2018
 * Bewertung: Testat, 20 Punkte
