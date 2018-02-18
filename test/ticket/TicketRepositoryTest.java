@@ -3,6 +3,7 @@ package ticket;
 import chip.USChipAdapter;
 import logging.Logger;
 import org.junit.Assert;
+import org.junit.BeforeClass;
 import org.junit.Test;
 import train.TravelClass;
 import train.WaggonSeat;
@@ -12,6 +13,11 @@ import voyager.Voyager;
 import java.util.Date;
 
 public class TicketRepositoryTest {
+
+    @BeforeClass
+    public static void resetTicketIdCounter() {
+        ElectronicTicket.TicketBuilder.resetIdCounter();
+    }
 
     @Test
     public void testRepositoryInstanceNotNull() {

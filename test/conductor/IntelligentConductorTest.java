@@ -4,6 +4,7 @@ import logging.Logger;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import ticket.ElectronicTicket;
 import ticket.TicketProducer;
 import ticket.TicketRepository;
 
@@ -13,6 +14,7 @@ public class IntelligentConductorTest {
     @Before
     public void produceTicketsAndConductor() {
         TicketRepository.instance.clear();
+        ElectronicTicket.TicketBuilder.resetIdCounter();
         Logger.instance.init();
         TicketProducer.produceTickets(true);
         conductor = new IntelligentConductor();

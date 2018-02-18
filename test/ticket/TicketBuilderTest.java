@@ -19,6 +19,7 @@ public class TicketBuilderTest {
 
     @Before
     public void buildAttributes() {
+        ElectronicTicket.TicketBuilder.resetIdCounter();
         sampleVoyager = new Voyager("John Doe", "FingerPrint", new MPhone(new USChipAdapter()));
         seat = new WaggonSeat(SeatLocation.right);
     }

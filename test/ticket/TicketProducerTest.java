@@ -16,6 +16,7 @@ public class TicketProducerTest {
 
     @BeforeClass
     public static void initLogger() {
+        ElectronicTicket.TicketBuilder.resetIdCounter();
         Logger.instance.init();
     }
 

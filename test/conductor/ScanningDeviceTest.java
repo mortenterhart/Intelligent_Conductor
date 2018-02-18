@@ -26,6 +26,7 @@ public class ScanningDeviceTest {
     @BeforeClass
     public static void buildInstancesAndRegisterTickets() {
         TicketRepository.instance.clear();
+        ElectronicTicket.TicketBuilder.resetIdCounter();
         scanner = new ScanningDevice();
         ElectronicTicket.TicketBuilder builder = new ElectronicTicket.TicketBuilder();
 

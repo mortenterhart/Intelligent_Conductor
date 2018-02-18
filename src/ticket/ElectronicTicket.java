@@ -298,6 +298,15 @@ public class ElectronicTicket {
             ticketId++;
             return ticket;
         }
+
+        /**
+         * Resets the internal static ticket id counter back to 0.
+         *
+         * @see ElectronicTicket.TicketBuilder#ticketId
+         */
+        public static void resetIdCounter() {
+            ticketId = 0;
+        }
     }
 
     /**
